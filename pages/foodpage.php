@@ -28,7 +28,7 @@ if (isset($_SESSION['user_id']) && isset($_POST['submit'])) {
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {
-        header("Location: nutbaby.html");
+        header("Location: nutmom.html");
         exit();
     } else {
         echo "Error recording food.";
