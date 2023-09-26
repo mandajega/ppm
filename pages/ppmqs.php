@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $date_of_birth = $yyyy . "-" . $mm . "-" . $dd;
     $sql_postpartumquestions = "INSERT INTO postpartumquestions (user_id, gender, name, date_of_birth, weight) VALUES ('$user_id','$gender', '$name', '$date_of_birth','$weight')";
     if ($conn->query($sql_postpartumquestions) === TRUE){
-        header("Location: intro.html");
+        header("Location: babycare, mothercare selection page.html");
         exit();
     } else {
         echo "Error inserting data.";
